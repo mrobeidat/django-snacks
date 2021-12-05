@@ -24,3 +24,5 @@ class django_snacks_Test(SimpleTestCase):
         url = reverse('about')
         response = self.client.get(url)
         self.assertTemplateUsed(response, 'about.html')
+
+        
